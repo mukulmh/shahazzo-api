@@ -1,13 +1,8 @@
 <?php
 
-use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ServiceController;
-use App\Models\Article;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/services', [ServiceController::class, 'index']);
-Route::get('/services/search/{name}', [ServiceController::class, 'search']);
 Route::get('/services/{id}', [ServiceController::class, 'show']);
+Route::get('/services/search/{name}', [ServiceController::class, 'search']);
 
 // protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
