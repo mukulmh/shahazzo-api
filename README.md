@@ -1,64 +1,38 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel 9 API with Sanctum Authentication
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Summery
+This is a Laravel API project. I have created public and protected API's with Sanctum Authentication.
+### API Functions
+i) Registration and create token <br>
+ii) Login and create token <br>
+iii) Logout and delete token <br>
+iv) View Items <br>
+v) Store Items with token <br>
+vi) Update Items with token <br>
+vii) Delete Items with token <br>
+viii) Search Items <br>
 
-## About Laravel
+## Screenshots
+### Public and protected routes
+<a href="https://ibb.co/c38jL04"><img src="https://i.ibb.co/1QXk61F/routes.png" alt="routes" border="0"></a><br>
+For public route anyone can make request. To access protected route you will need to put the access token generated after logging/registering.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Register API (Public route: no need to put token)
+<a href="https://ibb.co/3Mz7tx7"><img src="https://i.ibb.co/jWRT7CT/register.png" alt="register" border="0"></a>
+### Login API (Public route: no need to put token)
+<a href="https://ibb.co/djt0F9p"><img src="https://i.ibb.co/hLcRb5d/login.png" alt="login" border="0"></a>
+### Logout API (Protected route: need to put token)
+<a href="https://ibb.co/v4p8SGY"><img src="https://i.ibb.co/DfhnZyp/logout.png" alt="logout" border="0"></a>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### View Services API (Public route: no need to put token)
+<a href="https://ibb.co/dJKGzSM"><img src="https://i.ibb.co/Z1TWk3X/view-service.png" alt="view-service" border="0"></a>
+### Search for a Service API (Public route: no need to put token)
+<a href="https://ibb.co/pjTHq2s"><img src="https://i.ibb.co/YBS5g2K/search-service.png" alt="search-service" border="0"></a>
+### Create a new Service API (Protected route: need to put token)
+<a href="https://ibb.co/vwtDY3S"><img src="https://i.ibb.co/cgmxL6j/create-service.png" alt="create-service" border="0"></a>
+### Update an existing Service API (Protected route: need to put token)
+<a href="https://ibb.co/DzWbrDV"><img src="https://i.ibb.co/ydPR4nf/update-service.png" alt="update-service" border="0"></a>
+### Delete an existing Service API (Protected route: need to put token)
+<a href="https://ibb.co/2KQb0FY"><img src="https://i.ibb.co/NYP4gFn/delete-service.png" alt="delete-service" border="0"></a>
